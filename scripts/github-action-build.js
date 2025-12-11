@@ -130,6 +130,7 @@ class PakeBuildManager {
 
     if (this.config.needsSystemTray) {
       params.push("--show-system-tray");
+      params.push("--hide-on-close", true);
     }
 
     // Icon handling
